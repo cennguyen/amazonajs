@@ -25,7 +25,9 @@ export default function CartScreen(props) {
         props.history.push('/signin?redirec=shipping');
     };
     return (
+
         <div className="row top">
+            <Link to="/">Back to Result</Link>
             <div className="col-2">
                 <h1>Shopping Cart</h1>
                 {cartItems.length === 0 ? <MessageBox>
