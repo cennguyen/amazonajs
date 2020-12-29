@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect } from 'react';
 import Product from '../components/Product';
 import LoadingBox from '../components/LoadingBox';
@@ -11,7 +12,7 @@ export default function HomeScreen() {
     const { loading, error, products } = productList;
     useEffect(() => {
         dispatch(listProducts());
-    }, [])
+    }, [dispatch])
     return (
         <div>
             {loading ? (
