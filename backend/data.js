@@ -16,7 +16,7 @@ const data = {
     ],
     products: [
         {
-            _id: '1',
+
             name: 'Nike Slim Shirt',
             category: 'Shirts',
             image: '/images/p1.jpg',
@@ -28,7 +28,7 @@ const data = {
             description: 'high quality product',
         },
         {
-            _id: '2',
+
             name: 'Lacoste Dress Shirt',
             category: 'Shirts',
             image: '/images/p2.jpg',
@@ -39,7 +39,7 @@ const data = {
             description: 'Still high quality product',
         },
         {
-            _id: '3',
+
             name: 'Adidas Fit Shirt',
             category: 'Shirts',
             image: '/images/p3.jpg',
@@ -50,7 +50,7 @@ const data = {
             description: 'Medium quality product',
         },
         {
-            _id: '4',
+
             name: 'Nike Slim Pant',
             category: 'Pants',
             image: '/images/p4.jpg',
@@ -61,7 +61,7 @@ const data = {
             description: 'high quality product',
         },
         {
-            _id: '5',
+
             name: 'D&G Slim Pant',
             category: 'Pants',
             image: '/images/p5.jpg',
@@ -72,7 +72,7 @@ const data = {
             description: 'Still high quality product',
         },
         {
-            _id: '6',
+
             name: 'Lacoste Slim Pant',
             category: 'Pants',
             image: '/images/p6.jpg',
@@ -83,7 +83,7 @@ const data = {
             description: 'high quality product',
         },
         {
-            _id: '7',
+
             name: 'Adidas NMD City Shock 2',
             category: 'Shoes',
             image: '/images/p7.jpg',
@@ -94,7 +94,7 @@ const data = {
             description: 'high quality product',
         },
         {
-            _id: '8',
+
             name: 'Adidas NMD Human Race',
             category: 'Shoes',
             image: '/images/p8.jpg',
