@@ -11,8 +11,11 @@ export default function SigninScreen() {
     }
     return (
         <div>
+            <div>
+                <img className="signin" src="./images/sc1.jpg" alt="" />
+            </div>
             <form className="form" onSubmit={submitHandler}>
-                <hi>Sign In</hi>
+                 <h1>Sign In</h1>
                 <div>
                     <label htmlFor="email">Email Address</label>
                     <input
