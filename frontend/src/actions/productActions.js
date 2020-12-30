@@ -23,7 +23,7 @@ export const detailsProduct = (productID) => async (dispatch) => {
             payload:
                 error.respone && error.respone.data.message
                     ? error.respone.data.message
-                    : error.message
+                    : error.message,
         });
     }
 };
