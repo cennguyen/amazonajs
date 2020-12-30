@@ -44,13 +44,13 @@ userRouter.post(
                     name: user.name,
                     email: user.email,
                     isAdmin: user.isAdmin,
+                    isSeller: user.isSeller,
                     token: generateToken(user),
                 });
                 return;
             }
         }
-        res.status(401).send({ message: 'Invalid Email or Password' });
-
+        res.status(401).send({ message: 'Invalid email or password' });
     })
 );
 
