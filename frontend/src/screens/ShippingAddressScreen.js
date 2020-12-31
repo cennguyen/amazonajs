@@ -11,7 +11,7 @@ export default function ShippingAddressScreen(props) {
     if (!userInfo) {
         props.history.push('/signin')
     }
-    const [fullname, setFullName] = useState(shippingAddress.fullname);
+    const [fullName, setFullName] = useState(shippingAddress.fullName);
     const [address, setAddress] = useState(shippingAddress.address);
     const [city, setCity] = useState(shippingAddress.city);
     const [postalCode, setPostalCode] = useState(shippingAddress.postalCode);
@@ -20,7 +20,7 @@ export default function ShippingAddressScreen(props) {
     const submitHandler = (e) => {
         e.preventDefault();
         dispatch(
-            saveShippingAddress({ fullname, address, city, postalCode, country })
+            saveShippingAddress({ fullName, address, city, postalCode, country })
         );
         props.history.push('/payment');
         //TODO:dispatc Save shipping address action
@@ -33,12 +33,12 @@ export default function ShippingAddressScreen(props) {
                     <h1>Shipping Address</h1>
                 </div>
                 <div>
-                    <label htmlFor="fullName">FullName</label>
+                    <label htmlFor="fullName">full Name</label>
                     <input
                         type="text"
-                        id="fullname"
-                        placeholder="Enter Fullname"
-                        value={fullname}
+                        id="fullName"
+                        placeholder="Enter fullName"
+                        value={fullName}
                         onChange={(e) => setFullName(e.target.value)}
                         required></input>
                 </div>
