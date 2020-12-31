@@ -43,7 +43,7 @@ export default function PaymentMethodScreen(props) {
                             value="Momo"
                             name="paymentMethod"
                             required
-                            checked
+
                             onChange={(e) => setPaymentMethod(e.target.value)}
                         ></input>
                         <label htmlFor="momo">Momo</label>
@@ -55,7 +55,7 @@ export default function PaymentMethodScreen(props) {
                             value="Viettel Pay"
                             name="paymentMethod"
                             required
-                            checked
+
                             onChange={(e) => setPaymentMethod(e.target.value)}
                         ></input>
                         <label htmlFor="viettel">Viettel Pay</label>

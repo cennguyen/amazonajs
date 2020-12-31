@@ -5,7 +5,7 @@ import { createOrder } from '../actions/orderActions';
 import CheckoutSteps from '../components/CheckoutSteps';
 import { ORDER_CREATE_RESET } from '../constants/orderConstans';
 import LoadingBox from '../components/LoadingBox';
-import MessageBox from '../components/LoadingBox';
+import MessageBox from '../components/MessageBox';
 
 export default function PlaceOrderScreen(props) {
     const cart = useSelector((state) => state.cart);
