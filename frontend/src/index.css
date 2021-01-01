@@ -81,6 +81,9 @@ button{
   background-color: #f8f8f8;
   cursor: pointer;
 }
+button.small {
+  font-size: 1.2rem;
+}
 input:hover,
 select:hover,
 textarea:hover,
@@ -206,6 +209,10 @@ margin: 0.1rem;
   color: #a20200;
   background-color: #ffe0e0e0;
 }
+.alert-success {
+  color: #20a020;
+  background-color: #eeffe0;
+}
 
 /* Form*/
 .form{
@@ -262,4 +269,22 @@ margin: 0.1rem;
 .checkout-steps > div.active{
 border-top-color: #f08000;
 color: #f08000;
+}
+
+/* Table */
+.table{
+  width: 100%;
+  border-collapse: collapse;
+}
+.table tbody tr:nth-of-type(odd){
+background-color: #f4f4f4;
+}
+.table td, 
+.table th{
+  text-align: left;
+  border: 0.1rem solid #e4e4ee;
+  padding: 0.5rem;
+}
+.table button{
+  margin: 0 0.2rem;
 }
