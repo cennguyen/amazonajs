@@ -215,18 +215,17 @@ margin: 0.1rem;
 }
 
 /* Form*/
-.form{
+.form {
   max-width: 60rem;
   margin: 0 auto;
 }
-.form > div{
+.form > div {
   display: flex;
   flex-direction: column;
   margin: 1rem;
 }
-.form label{
+.form label {
   margin: 1rem 0;
-  
 }
 
 .form h1{
@@ -238,11 +237,11 @@ margin: 0.1rem;
 
 
 /* Drop Down*/
-.dropdown{
+.dropdown {
   display: inline-block;
   position: relative;
 }
-.dropdown-content{
+.dropdown-content {
   position: absolute;
   display: none;
   right: 0;
@@ -254,7 +253,7 @@ margin: 0.1rem;
   margin-top: 0.4rem;
   border-radius: 0.5rem;
 }
-.dropdown:hover .dropdown-content{
+.dropdown:hover .dropdown-content {
   display: block;
 }
 

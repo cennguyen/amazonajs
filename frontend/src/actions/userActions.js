@@ -1,5 +1,8 @@
 import Axios from "axios";
 import {
+    USER_DETAILS_FAIL,
+    USER_DETAILS_REQUEST,
+    USER_DETAILS_SUCCESS,
     USER_REGISTER_FAIL,
     USER_REGISTER_REQUEST,
     USER_REGISTER_SUCCESS,
@@ -52,4 +55,21 @@ export const signout = () => (dispatch) => {
     localStorage.removeItem('cartItems');
     localStorage.removeItem('shippingAddress');
     dispatch({ type: USER_SIGNOUT });
-  };
+};
+
+export const detailsUser = (userID) => async (dispatch, getState) => {
+    dispatch({ type: USER_DETAILS_REQUEST, payload: userID });
+    const { userSignin: { userInfo } } = getState();
+
+    try {
+        const { data } = await Axios.get(`/api/users/${userID}`, {
+            headers: { Authorization: `Bearer ${userInfo.token}` },
+        });
+        dispatch({ type: USER_DETAILS_SUCCESS, payload: data });
+    } catch (error) {
+        const message = error.respone && error.respone.data.message
+            ? error.respone.data.message
+            : error.message;
+        dispatch({ type: USER_DETAILS_FAIL, payload: message })
+    }
+}
