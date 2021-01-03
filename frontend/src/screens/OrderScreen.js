@@ -81,12 +81,12 @@ export default function OrderScreen(props) {
                                     <div className="card card-body">
                                         <h2>Shipping</h2>
                                         <p>
-                                            <strong>Name:</strong>{order.shippingAddress.fullName}<br />
-                                            <strong>Address:</strong>{order.shippingAddress.address},
-                                            {order.shippingAddress.city},{order.shippingAddress.postalCode},
-                                            {order.shippingAddress.country},
-
-                                </p>
+                                            <strong>Name:</strong> {order.shippingAddress.fullName} <br />
+                                            <strong>Address: </strong> {order.shippingAddress.address},
+                  {order.shippingAddress.city},{' '}
+                                            {order.shippingAddress.postalCode},
+                  {order.shippingAddress.country}
+                                        </p>
                                         {order.isDelivered ? (<MessageBox variant="success">Delivered at {order.deliveredAt}</MessageBox>
                                         ) : (
                                                 <MessageBox variant="danger">Not Delivered</MessageBox>
