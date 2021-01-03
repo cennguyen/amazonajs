@@ -191,7 +191,7 @@ export default function OrderScreen(props) {
                                                     )}
                                             </li>
                                         )}
-                                    {userInfo.isAdmin  && !order.isDelivered && (
+                                    {userInfo.isAdmin && !order.isDelivered && (
                                         <li>
                                             {loadingDeliver && <LoadingBox></LoadingBox>}
                                             {errorDeliver && (
