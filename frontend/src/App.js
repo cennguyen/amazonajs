@@ -17,6 +17,7 @@ import PrivateRoute from './components/PrivateRoute';
 import AdminRoute from './components/AdminRoute';
 import ProductLisScreen from './screens/ProductLisScreen';
 import ProductEditScreen from './screens/ProductEditScreen';
+import OrderListScreen from './screens/OrderListScreen';
 function App() {
   const cart = useSelector(state => state.cart);
   const { cartItems } = cart;
@@ -104,6 +105,7 @@ function App() {
           <PrivateRoute path="/profile" component={ProfileScreen}></PrivateRoute>
           <AdminRoute path="/productlist" component={ProductLisScreen}></AdminRoute>
           <Route path="/" component={HomeScreen} exact></Route>
+          <AdminRoute path="/orderlist" component={OrderListScreen}></AdminRoute>
         </main>
         <footer className="row center">All Right reserved</footer>
       </div>
