@@ -21,6 +21,7 @@ import OrderListScreen from './screens/OrderListScreen';
 import UserListScreen from './screens/UserListScreen';
 import UserEditScreen from './screens/UserEditScreen';
 import SellerRoute from './components/SellerRoute';
+import SellerScreen from './screens/SellerScreen';
 function App() {
   const cart = useSelector(state => state.cart);
   const { cartItems } = cart;
@@ -87,9 +88,6 @@ function App() {
                   Admin<i className="fa fa-caret-down"></i></Link>
                 <ul className="dropdown-content">
 
-                  <li>
-                    <Link to="/dashboard">Dashboard</Link>
-                  </li>
 
                   <li>
                     <Link to="/productlist">Product List</Link>
@@ -111,6 +109,7 @@ function App() {
         </header>
         <main>
           <Route path="/cart/:id?" component={CartScreen}></Route>
+          <Route path="/seller/:id?" component={SellerScreen}></Route>
           <Route path="/product/:id" component={ProductScreen} exact></Route>
           <Route path="/product/:id/edit" component={ProductEditScreen} exact></Route>
           <Route path="/signin" component={SigninScreen}></Route>

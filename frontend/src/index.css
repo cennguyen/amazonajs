@@ -123,6 +123,9 @@ a.brand{
 .row.center{
   justify-content: center;
 }
+.row.start{
+  justify-content: flex-start;
+}
 .row.top{
   align-items: flex-start;
 }
@@ -131,6 +134,12 @@ a.brand{
 }
 .col-2{
   flex: 2 1 50rem;
+}
+.col-3{
+  flex:32 1 50rem
+}
+.p-1{
+  padding: 1rem;
 }
 .min-30{
   min-width: 30rem;
